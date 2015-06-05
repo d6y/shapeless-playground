@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Main	/Users/richard/Developer/shapeless-playground/src/main/scala/records.scala	/^object Main extends App {$/;"	objects	line:4
+Delta	/Users/richard/Developer/shapeless-playground/src/main/scala/records.scala	/^  case class Delta($/;"	case classes	line:7
+deltaGen	/Users/richard/Developer/shapeless-playground/src/main/scala/records.scala	/^  val deltaGen = LabelledGeneric[Delta]$/;"	constants	line:12
+keys	/Users/richard/Developer/shapeless-playground/src/main/scala/records.scala	/^  val keys = Keys[deltaGen.Repr].apply$/;"	constants	line:13
+update	/Users/richard/Developer/shapeless-playground/src/main/scala/records.scala	/^  def update(id: Long, delta: Delta) = {$/;"	methods	line:16
+record	/Users/richard/Developer/shapeless-playground/src/main/scala/records.scala	/^    val record = deltaGen.to(delta)$/;"	constants	line:17
+pairs	/Users/richard/Developer/shapeless-playground/src/main/scala/records.scala	/^    val pairs = record.values zip keys$/;"	constants	line:18

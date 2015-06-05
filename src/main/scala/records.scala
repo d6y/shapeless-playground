@@ -13,6 +13,7 @@ object Main extends App {
   val keys = Keys[deltaGen.Repr].apply
 
   // Update record `id` with just the fields that need changing
+  // You could include `id` in `Delta` as long it's not `Option` -- it'll be ignored by the `collect`
   def update(id: Long, delta: Delta) = {
     val record = deltaGen.to(delta)
     val pairs = record.values zip keys
