@@ -19,6 +19,7 @@ object Main extends App {
 
     // Emit SQL clauses....
     pairs.toList.collect { case (Some(value), column) =>
+      // Don't do this literally: Maybe used StaticQuery.u with +? etc
       s"SET $column = $value"
     }
   }
